@@ -11,6 +11,87 @@
 
   <body>
     <a-scene>
+    	<a-entity camera position = "0 30 30" look-controls = "enabled: true" cursor-visible = "enabled: false" wasd-controls = "enabled: true"></a-entity>
+
+    	<!-- Floor -->
+    	<a-entity
+ 			position= "0 -1 0"
+ 			geometry= "primitive: plane; width: 10000; height: 10000"
+			rotation= "-90 0 0"
+			material= "repeat: 100 100; metalness: 0.1; roughness: 2; color: #37708c">
+		</a-entity>
+
+		<!-- Cake -->
+		<a-entity
+			geometry = "primitive: cylinder; height: 10; radius: 20"
+			position = "0 0 0"
+			material = "shader: standard; roughness: 1; color: #b993a6">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 7.5; radius: 15"
+			position = "0 10 0"
+			material = "shader: standard; roughness: 1; color: #b993a6">
+		</a-entity>
+
+
+		<!-- Candle -->
+		<entity
+				geometry = "primitive: sphere; height: 1; radius: 1"
+				position = "0 25 0"
+				material = "shader: flat; roughness: 1; color: yellow">
+			</entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 3; radius: .2"
+			position = "0 15 0"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 3; radius: .2"
+			position = "0 15 5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 3; radius: .2"
+			position = "0 15 -5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 3; radius: .2"
+			position = "5 15 0"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 2.5; radius: .2"
+			position = "-5 15 0"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 2.5; radius: .2"
+			position = "3.5 15 3.5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 2.5; radius: .2"
+			position = "3.5 15 -3.5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 2.5; radius: .2"
+			position = "-3.5 15 -3.5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+		<a-entity
+			geometry = "primitive: cylinder; height: 2.5; radius: .2"
+			position = "-3.5 15 3.5"
+			material = "shader: standard; roughness: 1; color: red">
+		</a-entity>
+
+
+		<a-entity
+				light = "color: white; type: directional"
+				position = "0 50 50"
+				distance = "75">
+		</a-entity>
     </a-scene>
   </body>
 </html>
